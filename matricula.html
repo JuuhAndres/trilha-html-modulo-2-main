@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu">
+            <!-- Aqui vai o seu menu -->
+            <ul>
+                <li><a href="template.html">Início</a></li>
+                <li><a href="academia.html">Academia</a></li>
+                <li><a href="matricula.html">Matricule-se</a></li>
+                <li><a href="planos.html">Planos</a></li>
+
+            </ul>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                
+                <img src="pexels-pixabay-260352.jpg" alt="Imagem do site 'Academia'" width="986" height="150" >
+                <!-- Aqui vai o seu header -->
+            </div>
+    
+            <div class="content">
+                <form action="/algumacoisa.php" method="post" autocomplete="on">
+                    <p>
+                        <label for="nome">Nome:* </label><input type="text" name="nome" id="nome" minlength="8" maxlength="40" required >
+                        <label for="email">Email:* </label><input type="email" name="email" id="email" required minlength="8">
+                        <label for="sexo">Sexo:* </label>Masculino<input type="radio" name="sexo" id="sexo">
+                        <label for="sexo">Feminino</label><input type="radio" name="sexo" id="sexo"><br>
+                        <label for="telefones">Telefone:*</label><input type="tel" name="Telefone" id="Telefone" required min="5" maxlength="15">
+                    </p>
+                    <p>
+                        <label for="iest">Planos: </label>
+                        <select name="estado" id="iest">
+                            <option value="select">-----Escolha de Planos-----</option>
+                            <optgroup label="Planos">
+                                <option value="Ouro" >Ouro</option>
+                                <option value="Platina">Platina</option>
+                                <option value="Prata">Prata</option>
+                                <option value="Diamante" >Diamante</option>
+                                <option value="anual">Plano Anual</option>
+                                <option value="diario">Plano diario</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                    
+                        <p>
+                            <label for="msg">Duvidas:</label>
+                            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+                        </p>
+                </form>
+
+                <!-- Aqui vai o seu conteúdo -->
+            </div>
+    
+            <div class="footer">
+                
+                
+                <h3>Segunda a Sábado</h3>
+                <h4>9h às 18h</h4>
+                <p>(XX) XXXX-XXXX</p>
+                <!-- Aqui vai o seu rodapé -->
+            </div>
+        </div>
+    </div>
+</body>
+</html>
